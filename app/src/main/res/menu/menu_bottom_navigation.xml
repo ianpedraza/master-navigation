@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mailFragment"
+        android:icon="@drawable/ic_email"
+        android:title="@string/title_mail" />
+    <item
+        android:id="@+id/videoCallFragment"
+        android:icon="@drawable/ic_videocam"
+        android:title="@string/title_video_call" />
+</menu>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Master Navigation</string>
+    <string name="title_mail">Mail</string>
+    <string name="title_video_call">VideoCall</string>
+
+    <string name="mail_fragment">Mail Fragment</string>
+    <string name="video_call_fragment">VideoCall Fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inbox_fragment">Inbox Fragment</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="starred_fragment">Starred Fragment</string>
+    <string name="title_starred">Starred</string>
+    <string name="snoozed_fragment">Snoozed Fragment</string>
+    <string name="title_snoozed">Snoozed</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="title_settings">Settings</string>
+    <string name="help_fragment">Help Fragment</string>
+    <string name="title_help"><![CDATA[Help & feedback]]></string>
+    <string name="subtitle">Subtitle</string>
+    <string name="header_title">Header title</string>
+    <string name="header_text">Header text</string>
+    <string name="title_options">Options</string>
+    <string name="title_labels">Labels</string>
+    <string name="welcome">Welcome</string>
+    <string name="fake_email">your.email@gmail.com</string>
+    <string name="button_new_email">Button new email</string>
+    <string name="next">Next</string>
+    <string name="mail_fragment_1_instructions">This is the first fragment, tap on next to navigate</string>
+    <string name="mail_fragment_2_instructions">You have navigated to the second fragment. Tap the button to go back.</string>
+    <string name="go_back">Go back</string>
+    <string name="video_calls_fragment_1_instructions">This action will send an argument to a second fragment, tap on next to go.</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="hello_name"><![CDATA[Hello <b>%s</b>, you have navigated to a second fragment sending an argument.]]></string>
+    <string name="screen_1">Screen 1</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="subflow_instructions">Tap the button to start a new sub-flow</string>
+    <string name="start">Start</string>
+    <string name="sub_flow_screen_1">Sub-flow Screen 1</string>
+    <string name="sub_flow_screen_2">Sub-flow Screen 2</string>
+    <string name="exit">Exit</string>
+</resources>

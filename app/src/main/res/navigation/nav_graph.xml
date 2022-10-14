@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/mailFragment">
+
+    <action
+        android:id="@+id/action_nav_graph_home_pop"
+        app:popUpTo="@id/mailFragment"
+        app:popUpToInclusive="false"
+        app:popUpToSaveState="true"
+        app:restoreState="true" />
+
+    <fragment
+        android:id="@+id/mailFragment"
+        android:name="com.ianpedraza.masternavigation.ui.mail.MailFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_mail">
+        <action
+            android:id="@+id/action_mailFragment_to_mailSecondFragment"
+            app:destination="@id/mailSecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="com.ianpedraza.masternavigation.ui.videocall.VideoCallFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_video_call">
+        <action
+            android:id="@+id/action_videoCallFragment_to_videoCallSecondFragment"
+            app:destination="@id/videoCallSecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.ianpedraza.masternavigation.ui.inbox.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox">
+        <action
+            android:id="@+id/action_inboxFragment_to_inboxSecondFragment"
+            app:destination="@id/inboxSecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/starredFragment"
+        android:name="com.ianpedraza.masternavigation.ui.starred.StarredFragment"
+        android:label="fragment_starred"
+        tools:layout="@layout/fragment_starred" />
+
+    <fragment
+        android:id="@+id/snoozedFragment"
+        android:name="com.ianpedraza.masternavigation.ui.snoozed.SnoozedFragment"
+        android:label="fragment_snoozed"
+        tools:layout="@layout/fragment_snoozed">
+        <action
+            android:id="@+id/action_snoozedFragment_to_snoozedSecondFragment"
+            app:destination="@id/navigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ianpedraza.masternavigation.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.ianpedraza.masternavigation.ui.help.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/mailSecondFragment"
+        android:name="com.ianpedraza.masternavigation.ui.mail.MailSecondFragment"
+        android:label="fragment_mail_second"
+        tools:layout="@layout/fragment_mail_second" />
+
+    <fragment
+        android:id="@+id/videoCallSecondFragment"
+        android:name="com.ianpedraza.masternavigation.ui.videocall.VideoCallSecondFragment"
+        android:label="fragment_video_call_second"
+        tools:layout="@layout/fragment_video_call_second">
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inboxSecondFragment"
+        android:name="com.ianpedraza.masternavigation.ui.inbox.InboxSecondFragment"
+        android:label="fragment_inbox_second"
+        tools:layout="@layout/fragment_inbox_second">
+        <action
+            android:id="@+id/action_inboxSecondFragment_to_inboxThirdFragment"
+            app:destination="@id/inboxThirdFragment"
+            app:popUpTo="@id/inboxFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inboxThirdFragment"
+        android:name="com.ianpedraza.masternavigation.ui.inbox.InboxThirdFragment"
+        android:label="fragment_inbox_third"
+        tools:layout="@layout/fragment_inbox_third" />
+
+    <navigation
+        android:id="@+id/navigation"
+        app:startDestination="@id/snoozedSecondFragment">
+
+        <fragment
+            android:id="@+id/snoozedThirdFragment2"
+            android:name="com.ianpedraza.masternavigation.ui.snoozed.SnoozedThirdFragment"
+            android:label="fragment_snoozed_third"
+            tools:layout="@layout/fragment_snoozed_third" />
+
+        <fragment
+            android:id="@+id/snoozedSecondFragment"
+            android:name="com.ianpedraza.masternavigation.ui.snoozed.SnoozedSecondFragment"
+            android:label="fragment_snoozed_third"
+            tools:layout="@layout/fragment_snoozed_third">
+
+            <action
+                android:id="@+id/action_snoozedSecondFragment_to_snoozedThirdFragment2"
+                app:destination="@id/snoozedThirdFragment2"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"
+                app:popUpTo="@id/snoozedFragment" />
+        </fragment>
+
+    </navigation>
+
+</navigation>
